@@ -104,7 +104,6 @@ tab_dict = {
     "Data Sources": tab6
 }
 
-
 with tab_dict["Overview"]:
     
         # Initialize CoinGecko API client
@@ -297,7 +296,7 @@ with tab_dict["Data Exploration"]:
             template="plotly_dark",
             xaxis=dict(showgrid=True, showline=True),
             yaxis=dict(showgrid=True, showline=True),
-            hovermode="closest",  # Enables hover-over features
+            hovermode="closest",  
             autosize=True
         )
 
@@ -305,7 +304,7 @@ with tab_dict["Data Exploration"]:
         selected_features = st.multiselect(
             "Select Features to Display in the Correlation Matrix:",
             options=corr_df.columns.tolist(),
-            default=corr_df.columns.tolist()  # Show all by default
+            default=corr_df.columns.tolist() 
         )
 
         # Filter the correlation matrix based on selected features
@@ -342,11 +341,11 @@ with tab_dict["Forecast Customization"]:
         st.header("Customize Forecast Assumptions")
         inflation = st.slider("Expected Inflation Rate (%)", 0.0, 10.0, 2.5)
         m2_growth = st.slider("Global M2 Growth (%)", 0.0, 20.0, 5.0)
-        st.write("Future forecast customization coming soon...")
+        st.write("...")
 
 with tab_dict["Model Performance"]:
         st.header("Model Insights")
-        st.write("Coming soon: RMSE, R² score, residual analysis and predicted vs actual plots.")
+        st.write("RMSE, R² score, residual analysis and predicted vs actual plots.")
 
 with tab_dict["Data Sources"]:
         st.header("Data Sources & Educational Resources")
@@ -380,4 +379,4 @@ with tab_dict["Data Sources"]:
 
 
 st.markdown("---")
-st.markdown("Made with ❤️ by Mikaela | Powered by XGBoost + Streamlit")
+st.markdown("Made with ❤️ by Mikaela | ")
