@@ -13,6 +13,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import requests
 import yfinance as yf
+import os
 
 # Set the streamlit app layout to wide
 st.set_page_config(layout="wide")
@@ -170,6 +171,10 @@ with tab_dict["Overview"]:
 
 with tab_dict["Predictive Analytics"]:
 
+        # Construct a relative path to the model
+        model_path = os.path.join('model', 'bitcoin_model.pkl')
+        model = joblib.load(model_path)    
+    
         # --- Sidebar ---
         st.sidebar.title("Choose the prediction range and time interval below:")
         st.sidebar.write("After running the prediction, check the Predictive Analytics tab for the results!")
