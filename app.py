@@ -219,10 +219,9 @@ with tab_dict["Data Exploration"]:
         st.header("Explore the Data")
         st.write("This section allows you to explore the relationship between Bitcoin prices and key economic indicators through interactive charts.")
 
-
         # Path to your CSV file
-        csv_file_path = '/Users/mikaelaconnell/Desktop/bitcoin_final_filled.csv'
-    
+        csv_file_path = 'bitcoin_final_filled.csv'
+
         # Load the CSV file
         data = pd.read_csv(csv_file_path)
 
