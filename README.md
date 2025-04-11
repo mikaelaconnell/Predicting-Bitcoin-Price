@@ -1,4 +1,1 @@
-# Predicting-Bitcoin-Price
-
-Project Overview
-- This project involved building a bitcoin price prediction web app using machine learning and macroeconomic indicators. This app allows users to forecast BTC prices over a chosen time period (1-90 days) and view trends and trade suggestions on an interactive dashboard. 
+This project predicts Bitcoin prices using macroeconomic indicators, including the Global and US M2 Money Supply, as well as other economic variables. The motivation behind it is my interest in understanding how monetary policy, inflation, and liquidity affect Bitcoin’s price movements, and using machine learning to make predictions. The domain interest this project focuses on is financial markets and cryptocurrency analysis. The project provides insights on how M2 supply affects Bitcoin prices, and deploys a machine learning model for accurate BTC price predictions. There are many other crypto forecasting models, but most rely on technical analysis rather than macroeconomic fundamentals, making this project a unique approach. 
