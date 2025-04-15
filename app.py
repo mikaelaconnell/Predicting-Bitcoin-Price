@@ -105,7 +105,6 @@ tab_dict = {
 }
 
 with tab_dict["Overview"]:
-
         # --- Page Layout ---
         left_col, right_col = st.columns(2)
         with left_col:
@@ -153,8 +152,8 @@ with tab_dict["Overview"]:
 
 with tab_dict["Prediction Results"]:
       # Construct a relative path to the model
-      # model_path = os.path.join('model', 'bitcoin_model.pkl')
-      # model = joblib.load(model_path)
+      model_path = os.path.join('model', 'bitcoin_model.pkl')
+      model = joblib.load(model_path)
 
       # --- Sidebar ---
       st.sidebar.image("image/Macro_BTC.png", width=270)
@@ -221,11 +220,11 @@ with tab_dict["Data Exploration"]:
             """)
 
         # Path to your CSV file
-        csv_file_path = '/Users/mikaelaconnell/Desktop/bitcoin_final_filled.csv'
-        # csv_file_path = 'bitcoin_final_filled.csv'
+        csv_file_path = 'bitcoin_final_filled.csv'
 
         # Load the CSV file
         data = pd.read_csv(csv_file_path)
+        
         # Ensure that the 'Date' column is in datetime format
         data['Date'] = pd.to_datetime(data['date'])
 
