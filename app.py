@@ -390,10 +390,11 @@ with tab_dict["Data Exploration"]:
         st.plotly_chart(filtered_fig)
     
         st.write("""
-            ### How This Data Contributes to Bitcoin Price Prediction
-            By combining multiple economic indicators like the M2 Money Supply, inflation rates, and stock market movements, this dataset allows us to capture the broader macroeconomic environment, which is crucial for predicting Bitcoin price fluctuations.
-            Cryptocurrency markets are deeply influenced by broader economic trends. This app bridges the gap between crypto and macroeconomics
-            by incorporating key financial indicators into the prediction model, providing more informed insights than purely technical approaches.
+            ### How This Data Contributes to Bitcoin Price Prediction:
+            By combining multiple economic indicators like the M2 Money Supply, inflation rates, and stock market movements, this dataset captures the broader macroeconomic environment that influences Bitcoin price fluctuations. 
+            Notably, there is a 108-day lag between changes in global M2 and movements in Bitcoin prices — a critical insight that this model accounts for using lag features. 
+            By aligning macro variables with their delayed impact on Bitcoin, this app provides a more realistic and forward-looking prediction. 
+            It bridges the gap between crypto and macroeconomics, offering insights that go beyond purely technical approaches.
             """)
 
 
