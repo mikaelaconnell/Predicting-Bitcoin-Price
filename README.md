@@ -53,8 +53,8 @@ This app combines data from both crypto markets and traditional economic sources
 ## Machine Learning Model
 
 - **Model**: XGBoost Regressor  
-- **Target Variable**: Monthly average BTC closing price  
-- **Evaluation Metrics**: RMSE, R² Score  
+- **Target Variable**: Daily BTC closing price  
+- **Evaluation Metrics**: MAE, RMSE, R² Score  
 - **Feature Importance** visualized using model outputs  
 - Captures both macro trends and market-specific volatility  
 
