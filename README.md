@@ -1,4 +1,4 @@
-## **MacroBTC Forecasting App**
+## MacroBTC Forecasting App
 
 ## Project Overview
 **MacroBTC** is a Streamlit web application that predicts Bitcoin prices using macroeconomic indicators such as inflation, interest rates, and global money supply. It blends modern machine learning with economic fundamentals to offer an intuitive, interactive crypto forecasting tool.
@@ -20,11 +20,11 @@ This app combines data from both crypto markets and traditional economic sources
 ---
 
 ## Features
-- 📈 Predict future Bitcoin prices based on user-adjustable macro inputs  
-- 📊 Explore historical data & macroeconomic trends  
-- 🔍 View correlation matrices and feature importance  
-- 🧠 Built with XGBoost for time series prediction  
-- 💻 Interactive Streamlit dashboard
+- Predict future Bitcoin prices based on user-adjustable macro inputs  
+- Explore historical data & macroeconomic trends  
+- View correlation matrices and feature importance  
+- Built with XGBoost for time series prediction  
+- Interactive Streamlit dashboard
 
 ---
 
@@ -50,7 +50,7 @@ This app combines data from both crypto markets and traditional economic sources
 
 ---
 
-## 🤖 Model Info
+## Machine Learning Model
 
 - **Model**: XGBoost Regressor  
 - **Target Variable**: Monthly average BTC closing price  
